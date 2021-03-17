@@ -1,0 +1,24 @@
+footer{
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+
+  & #logo_footer{
+    padding-top: 20px;
+  }
+
+  & .links{
+
+    & li{
+      margin-bottom: 10px;
+    }
+  }
+
+  & .join_us{
+    text-align: center;
+
+    & p{
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: whitesmoke;
+  font-size: 10px;
+}
+header div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  padding: 10px;
+  background-color: #07a0e6;
+  text-transform: uppercase;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+header nav ul a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+header nav ul a:hover {
+  color: orange;
+  transform: translateY(-1px);
+}
+header nav ul li:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 1200px) {
+  header div {
+    margin: 30px 0;
+    transition: all 1s;
+  }
+}
+.presentation {
+  padding: 50px 10%;
+  background-image: linear-gradient(#29b6f6, #0277bd);
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+.presentation .content_text {
+  margin-left: 30px;
+  width: 50%;
+}
+.presentation .content_text p {
+  font-size: 75%;
+  margin-bottom: 15px;
+}
+.presentation .content_text button {
+  background-color: #fdec09;
+  border-radius: 28px;
+  border: 1px solid #b0a505;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #aba018;
+}
+.presentation .content_text button:hover {
+  background-color: #f13333;
+  text-shadow: none;
+}
+.presentation .content_text button:active {
+  transform: translateY(2px);
+  text-shadow: none;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .presentation .content_text {
+    margin-top: 35px;
+    width: 90%;
+  }
+  .presentation .content_text button {
+    width: max-content;
+    margin-left: 30%;
+  }
+}
+.products {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.products .detail_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  border-right: rgba(169, 169, 169, 0.2) 1px solid;
+  border-bottom: rgba(169, 169, 169, 0.2) 1px solid;
+  margin: -1px;
+}
+.products .detail_product .name_product {
+  display: flex;
+  flex-direction: row;
+  padding-right: 35%;
+  align-items: center;
+}
+.products .detail_product .name_product h3 {
+  margin-left: 10%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+.products .detail_product p {
+  width: 45%;
+  font-size: 80%;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.review .our_clients {
+  text-align: center;
+}
+.review .our_clients h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+.review .our_clients a {
+  text-decoration: none;
+  color: #29b6f6;
+  font-weight: 900;
+  font-size: 0.8em;
+  border-bottom: 1px #29b6f6 dotted;
+}
+.review .review_clients {
+  display: flex;
+  justify-content: center;
+}
+.review .review_clients .one_client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+.review .review_clients .one_client h3 {
+  margin: 20px 0 10px 0;
+}
+.review .review_clients .one_client p {
+  text-align: center;
+  font-size: 0.9em;
+  color: grey;
+}
+
+footer {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-evenly;
+}
+footer #logo_footer {
+  padding-top: 20px;
+}
+footer .links li {
+  margin-bottom: 10px;
+}
+footer .join_us {
+  text-align: center;
+}
+footer .join_us p {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 3.5em;
+  line-height: 0.7em;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+#espace {
+  height: 5vh;
+}
+
+/*# sourceMappingURL=app.css.map */

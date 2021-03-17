@@ -1,0 +1,45 @@
+.review{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  & .our_clients{
+    text-align: center;
+
+    & h2{
+      font-size:2em;
+      margin-bottom:15px;
+      font-weight: 900;
+    }
+
+    & a{
+      text-decoration: none;
+      color: #29b6f6;
+      font-weight: 900;
+      font-size: 0.8em;
+      border-bottom: 1px #29b6f6 dotted;
+    }
+  }
+
+  & .review_clients{
+    display: flex;
+    justify-content: center;
+
+    & .one_client{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5%;
+
+      & h3{
+        margin: 20px 0 10px 0;
+      }
+
+      & p{
+        text-align: center;
+        font-size: 0.9em;
+        color: grey;
+      }
+    }
+  }
+}
