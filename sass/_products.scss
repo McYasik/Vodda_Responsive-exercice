@@ -1,9 +1,9 @@
 .products{
-  background-color: orange;
   padding: 15px;
   display:grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(2,1fr);
+
 
   & .detail_product{
     display: flex;
@@ -45,6 +45,37 @@
     }
     & #product08{
       display: none;
+    }
+  }
+}
+
+@media (max-width:600px){
+  .products{
+    display:flex;
+    flex-direction: column;
+
+    & #product03, & #product04, & #product05, & #product06, & #product07, & #product08{
+      display: none;
+    }
+
+    & .detail_product{
+      align-items: flex-start;
+      width: 100%;
+      padding: 20px 0;
+
+      & .img_600{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        & img{
+          width: 70%;
+        }
+      }
+
+      & p{
+        padding-left: 35px;
+      }
     }
   }
 }

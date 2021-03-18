@@ -1,5 +1,4 @@
 footer{
-  background-color: orange;
   display: flex;
   padding-bottom: 30px;
   justify-content: space-evenly;
@@ -29,5 +28,15 @@ footer{
     flex-direction: column;
     align-content: center;
     margin: 0;
+    width: 100%;
+
+    & .links ul li{
+      text-align: center;
+    }
+    & #logo_footer{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
   }
 }
